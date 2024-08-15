@@ -3,6 +3,7 @@ document.querySelector("form").addEventListener("submit", (e) => {
   e.preventDefault();
   // console.log("submit oldu");
   addTask();
+  document.querySelector("input").value = ""
 });
 
 window.onload  = () => displayTasks()
@@ -20,9 +21,12 @@ const addTask = () => {
       task : inputValue,
       degree : taskPrio
     }
-    todo.push(newTask)
+    if(taskPrio == "standard"){
+      todo.push(newTask)
+    }else{
+      todo.unshift(newTask)
+    }
     displayTasks()
-    form.reset()
   }else{
     alert("task yaz")
   }

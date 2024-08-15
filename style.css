@@ -1,0 +1,71 @@
+body{
+    background-image: url("img/shooting-star-2024127_1280.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.task-list-item{
+    list-style-type: none;
+    width: 100%;
+    border: 2px solid red;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    padding: 0.7rem 0.3rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8dbde79f;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.task-checked{
+    background-color: orange;
+    text-decoration: overline;
+}
+
+.container{
+    backdrop-filter: blur(15px) !important;
+    background-color: #9cc2e434;
+    max-height: 95vh;
+}
+
+h1{
+    color: #9CC3E4 !important;
+}
+
+span{
+    background-color: rgba(255, 228, 196, 0.575);
+    padding: 0.2rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.575);
+    background-color: #777676;
+}
+
+.todo-list{
+    overflow-y: scroll;
+    max-height: 80vh;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #777676; 
+    border-radius: 10px; 
+}
+
+input, select{
+    background-color: rgba(190, 183, 170, 0.541) !important;
+}
+
