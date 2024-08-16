@@ -11,7 +11,7 @@ body{
 .task-list-item{
     list-style-type: none;
     width: 100%;
-    border: 2px solid red;
+    border: 2px solid rgba(247, 247, 247, 0.39);
     margin-top: 1.5rem;
     border-radius: 10px;
     padding: 0.7rem 0.3rem;
@@ -32,7 +32,6 @@ body{
   text-decoration-thickness: 2px; /* Çizgi kalınlığını belirler */
 }
 
-
 .container{
     backdrop-filter: blur(15px) !important;
     background-color: #9cc2e434;
@@ -43,7 +42,7 @@ h1{
     color: #9CC3E4 !important;
 }
 
-span{
+p span{
     background-color: rgba(255, 228, 196, 0.575);
     padding: 0.2rem;
     border-radius: 10px;

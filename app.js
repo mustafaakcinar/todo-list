@@ -34,9 +34,18 @@ const addTask = () => {
     }else{
       todo.unshift(newTask)
     }
+    Swal.fire({
+      title: "Lets go!",
+      text: "There's one more thing you need to do now...",
+      icon: "success"
+    });
     displayTasks()
   }else{
-    alert("task yaz")
+    Swal.fire({
+      title: "Something wrong...",
+      text: "Task area cant be empty...",
+      icon: "error"
+    });
   }
 }
 
