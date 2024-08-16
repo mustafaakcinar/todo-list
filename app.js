@@ -22,7 +22,7 @@ const addTask = () => {
   const inputValue = document.querySelector("input").value;
   // console.log(inputValue);
   const taskPrio = document.querySelector("select").value
-  if(inputValue){
+  if(inputValue.trim()){
     const newTask = {
       task : inputValue,
       degree : taskPrio,
@@ -133,9 +133,18 @@ const editTask = (taskEdit) => {
       oldTask.textContent = input2.value
       taskEdit.closest("li").querySelector("p").replaceChild(oldTask, input2) // en yakın li elementinden ulaşarak replaceChild metoduyla yerlerini değiştiriyoruz
       displayTasks()
+    }else if((e.key == "Enter" && input2.value.trim() == "")){
+      e.preventDefault()
+      Swal.fire({
+        title: "Something wrong...",
+        text: "Task area cant be empty...",
+        icon: "error"
+      });
     }
   }
 }
+
+
 
 
 
